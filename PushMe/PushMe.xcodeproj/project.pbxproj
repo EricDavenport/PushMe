@@ -16,6 +16,7 @@
 		58FF0F70257D9B300090DDFC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF0F6F257D9B300090DDFC /* NotificationController.swift */; };
 		58FF0F72257D9B300090DDFC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF0F71257D9B300090DDFC /* ComplicationController.swift */; };
 		58FF0F74257D9B300090DDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58FF0F73257D9B300090DDFC /* Assets.xcassets */; };
+		58FF0F88257E8DAD0090DDFC /* PushUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF0F87257E8DAD0090DDFC /* PushUpModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		58FF0F73257D9B300090DDFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58FF0F75257D9B300090DDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58FF0F76257D9B300090DDFC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		58FF0F87257E8DAD0090DDFC /* PushUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				58FF0F5B257D9B2E0090DDFC /* PushMe WatchKit App */,
 				58FF0F6A257D9B300090DDFC /* PushMe WatchKit Extension */,
+				58FF0F8C257E8DB50090DDFC /* Models */,
 				58FF0F54257D9B2E0090DDFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +131,14 @@
 				58FF0F76257D9B300090DDFC /* PushNotificationPayload.apns */,
 			);
 			path = "PushMe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		58FF0F8C257E8DB50090DDFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58FF0F87257E8DAD0090DDFC /* PushUpModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 				58FF0F70257D9B300090DDFC /* NotificationController.swift in Sources */,
 				58FF0F72257D9B300090DDFC /* ComplicationController.swift in Sources */,
 				58FF0F6E257D9B300090DDFC /* ExtensionDelegate.swift in Sources */,
+				58FF0F88257E8DAD0090DDFC /* PushUpModel.swift in Sources */,
 				58FF0F6C257D9B300090DDFC /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
