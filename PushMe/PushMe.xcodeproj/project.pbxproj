@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58B2B74F257FFCB000DEF471 /* QuickAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2B74E257FFCB000DEF471 /* QuickAddController.swift */; };
+		58B2B754257FFD1000DEF471 /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2B753257FFD1000DEF471 /* MonthViewController.swift */; };
+		58B2B759257FFD2700DEF471 /* EditGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2B758257FFD2700DEF471 /* EditGoalController.swift */; };
 		58FF0F58257D9B2E0090DDFC /* PushMe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 58FF0F57257D9B2E0090DDFC /* PushMe WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		58FF0F5E257D9B2E0090DDFC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FF0F5C257D9B2E0090DDFC /* Interface.storyboard */; };
 		58FF0F60257D9B2F0090DDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58FF0F5F257D9B2F0090DDFC /* Assets.xcassets */; };
@@ -62,6 +65,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		58B2B74E257FFCB000DEF471 /* QuickAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddController.swift; sourceTree = "<group>"; };
+		58B2B753257FFD1000DEF471 /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
+		58B2B758257FFD2700DEF471 /* EditGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalController.swift; sourceTree = "<group>"; };
 		58FF0F53257D9B2E0090DDFC /* PushMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FF0F57257D9B2E0090DDFC /* PushMe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PushMe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FF0F5D257D9B2E0090DDFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -89,6 +95,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58B2B74D257FFC6E00DEF471 /* InterfaceControllers */ = {
+			isa = PBXGroup;
+			children = (
+				58FF0F6B257D9B300090DDFC /* InterfaceController.swift */,
+				58B2B758257FFD2700DEF471 /* EditGoalController.swift */,
+				58B2B74E257FFCB000DEF471 /* QuickAddController.swift */,
+				58B2B753257FFD1000DEF471 /* MonthViewController.swift */,
+			);
+			path = InterfaceControllers;
+			sourceTree = "<group>";
+		};
 		58FF0F4C257D9B2E0090DDFC = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +139,7 @@
 		58FF0F6A257D9B300090DDFC /* PushMe WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				58FF0F6B257D9B300090DDFC /* InterfaceController.swift */,
+				58B2B74D257FFC6E00DEF471 /* InterfaceControllers */,
 				58FF0F6D257D9B300090DDFC /* ExtensionDelegate.swift */,
 				58FF0F6F257D9B300090DDFC /* NotificationController.swift */,
 				58FF0F71257D9B300090DDFC /* ComplicationController.swift */,
@@ -267,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B2B759257FFD2700DEF471 /* EditGoalController.swift in Sources */,
+				58B2B754257FFD1000DEF471 /* MonthViewController.swift in Sources */,
 				58FF0F70257D9B300090DDFC /* NotificationController.swift in Sources */,
+				58B2B74F257FFCB000DEF471 /* QuickAddController.swift in Sources */,
 				58FF0F72257D9B300090DDFC /* ComplicationController.swift in Sources */,
 				58FF0F6E257D9B300090DDFC /* ExtensionDelegate.swift in Sources */,
 				58FF0F88257E8DAD0090DDFC /* PushUpModel.swift in Sources */,
