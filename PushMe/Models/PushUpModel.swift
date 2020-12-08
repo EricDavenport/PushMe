@@ -8,7 +8,8 @@
 import Foundation
 
 struct PushUpModel: Hashable {
-  let count: Int
+  let totalCompleted: Int
+  let goal: Int
   let date: Date
   let identifier = UUID()
   
@@ -18,12 +19,12 @@ struct PushUpModel: Hashable {
   
   static func testData() -> [PushUpModel] {
     return [
-      PushUpModel(count: 10, date: Date()),
-      PushUpModel(count: 20, date: Date()),
-      PushUpModel(count: 30, date: Date()),
-      PushUpModel(count: 40, date: Date()),
-      PushUpModel(count: 50, date: Date()),
-      PushUpModel(count: 45, date: Date())
+      PushUpModel(totalCompleted: 10, goal: 50, date: Date()),
+      PushUpModel(totalCompleted: 20, goal: 50, date: Date()),
+      PushUpModel(totalCompleted: 30, goal: 50, date: Date()),
+      PushUpModel(totalCompleted: 40, goal: 50, date: Date()),
+      PushUpModel(totalCompleted: 50, goal: 50, date: Date()),
+      PushUpModel(totalCompleted: 45, goal: 50, date: Date())
     ]
   }
 }

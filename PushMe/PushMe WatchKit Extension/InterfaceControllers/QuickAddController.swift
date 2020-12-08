@@ -16,15 +16,14 @@ class QuickAddController: WKInterfaceController {
   @IBOutlet weak var quickAddBottomRight: WKInterfaceButton!
   @IBOutlet weak var currentTotalLabel: WKInterfaceLabel!
   
-  var currentTotal : Int = {
-    didSet {
-      
+  var currentTotal = Int() {
+    didSet{
+      currentTotalLabel.setText("\(currentTotal)")
     }
   }
   
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
-    
     
     currentTotalLabel.setText("\(currentTotal)")
   }
@@ -44,6 +43,19 @@ class QuickAddController: WKInterfaceController {
     currentTotal += 1
   }
   
+  @IBAction func topRightQuickAdd() {
+    currentTotal += 3
+
+  }
   
+  @IBAction func bottomLeftQuickAdd() {
+    currentTotal += 5
+
+  }
+  
+  @IBAction func bottomRightQuickAdd() {
+    currentTotal += 10
+
+  }
   
 }
